@@ -1,13 +1,16 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
+import NasaCard from "./components/cardComponents/nasaCard";
+import Info from "./components/cardComponents/cardInfo";
 
 function App() {
   return (
+
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+        <div>
+            <h1>NASA APOD</h1>
+        </div>
+      <Info/>
     </div>
   );
 }
